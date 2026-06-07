@@ -1,3 +1,5 @@
+import mongoose from 'mongoose'
+
 const mongoose = require('mongoose')
 
 const fragranceSchema = new mongoose.Schema(
@@ -28,6 +30,10 @@ const fragranceSchema = new mongoose.Schema(
     price: {
       type: String,
       required: true
+    },
+    dupePrice:{
+      type:String,
+      required:true
     },
     similarity: {
       type:String,
